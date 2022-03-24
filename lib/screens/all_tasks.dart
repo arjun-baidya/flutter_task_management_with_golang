@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_management_with_golang/utils/app_colors.dart';
 import 'package:flutter_task_management_with_golang/widgets/button_widget.dart';
 import 'package:flutter_task_management_with_golang/widgets/task_widget.dart';
+import 'package:get/get.dart';
 
 class AllTasks extends StatelessWidget {
   const AllTasks({Key? key}) : super(key: key);
@@ -41,9 +42,11 @@ class AllTasks extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(left: 20, right: 40, top: 20),
             alignment: Alignment.topLeft,
-            child: const Icon(
-              Icons.arrow_back,
-              color: Colors.blue,
+            child:  InkWell(
+              onTap: (){
+                Get.back();
+              },
+              child: const Icon(Icons.arrow_back,color: Colors.blue,),
             ),
             width: double.maxFinite,
             height: MediaQuery.of(context).size.height / 3.5,
