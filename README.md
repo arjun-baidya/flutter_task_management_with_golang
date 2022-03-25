@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+This is only front-end part.
+This app for task management easily and this repo is for design part
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
